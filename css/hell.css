@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+
+html, body {
+  margin:           0;     padding:       0;
+  font-size:     1rem;     font-weight: 200;
+  width:         100%;     height:     100%;
+  font-family:            'Oswald', cursive;
+  text-transform:                 uppercase;
+  background-color:        rgb(0, 0, 0);
+  color:                               #F922DD;
+}
+
+.content img{
+  width: 15%;
+  border-radius: 8px;
+  /* padding: 25px; */
+  box-shadow: rgb(253 88 232 / 40%) 0px 0px 20px 2px, rgb(0 0 0 / 22%) 0px 15px 12px;
+}
+.content {
+  text-align:                        center;
+  position: relative;      top:         50%;
+  -ms-transform:           translateY(-50%);
+  -webkit-transform:       translateY(-50%);
+  transform:               translateY(-50%);
+}
+.content span{
+  width:        30px; display: inline-block;
+}
+.random{
+  padding-top: 40px;
+}
+a {
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+}
+button {
+    width: 140px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(124, 124, 124);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:active:before {
+    background: #b9b9b9;
+   }
